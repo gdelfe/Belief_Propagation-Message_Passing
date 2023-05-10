@@ -1,3 +1,14 @@
+// Static Belief-Propagation for the Ising model with arbitrary connectivity 
+// (positive, negative, and asymmetric connectivity). The code compute the magnetization
+// as a function of beta = 1/temperature using belief-propagation (message-passing)
+// 
+// ./a.out N BetaFinal input_file_ERRG.dat
+// where N = size of the ERRG, BetaFinal = 1/Final_Temperature, input_file_ERRG.dat it is the graph file
+// containing the structure of the network and generated with Generate_ERRG_deg.c
+//
+// OUTPUT: BP_magnetization.dat -> file which contains the magnetization vs beta = 1/Temperature
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
